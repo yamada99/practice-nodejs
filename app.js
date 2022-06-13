@@ -49,6 +49,13 @@ function getFromClient(request, response){
             response.end();
             break;
 
+        case '/test-fetch':
+            console.log("test-fetch");
+            response.writeHead(200, {'Content-Type':'application/json'});
+            response.write("test");
+            response.end();
+            break;
+
         default:
             response.writeHead(200, {'Content-Type':'text/plain'});
             response.end('no page');
