@@ -1,6 +1,6 @@
 
 async function test(){
-    const response = await fetch("http://localhost:3000/test-fetch",{
+    await fetch("http://localhost:3000/test-fetch",{
         method:'GET',
         mode:'no-cors',
         credentials:'include',
@@ -10,12 +10,7 @@ async function test(){
         }
     });
 
-    console.log(response.status);
-
-    if(response.ok){
-        const json = await response.json();
-    console.log(json);
-    }
+    console.log("fetch");
 }
 
 
