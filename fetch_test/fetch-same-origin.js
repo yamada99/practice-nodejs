@@ -1,8 +1,8 @@
 
-async function noCors(){
+async function sameOrigin(){
     await fetch("http://localhost:3000/test-fetch",{
         method:'GET',
-        mode:'no-cors',
+        mode:'same-origin',
         credentials:'include',
         cache:'default',
         headers:{
@@ -10,5 +10,5 @@ async function noCors(){
         }
     });
 
-    console.log("fetch");
+    console.log("fetch-same-origin");
 }

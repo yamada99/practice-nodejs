@@ -1,8 +1,8 @@
 
-async function noCors(){
+async function cors(){
     await fetch("http://localhost:3000/test-fetch",{
         method:'GET',
-        mode:'no-cors',
+        mode:'cors',
         credentials:'include',
         cache:'default',
         headers:{

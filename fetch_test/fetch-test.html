@@ -5,9 +5,13 @@
         <title>fetch api test</title>
         <script src="fetch.js"></script>
         <script src="promise.js"></script>
+        <script src="fetch-same-origin.js"></script>
+        <script src="fetch-cors.js"></script>
     </head>
     <body>
-        <input type="button" value="Get" onclick="test()"/><br />
+        <input type="button" value="no-cors" onclick="noCors()"/><br />
+        <input type="button" value="same-origin" onclick="sameOrigin()"/><br />
+        <input type="button" value="cors" onclick="cors()"/><br />
         <input type="button" value="promise" onclick="promise()"/><br />
     </body>
 </html>
