@@ -33,7 +33,7 @@ function getFromClient(request, response){
         case '/test-fetch':
             console.log("test-fetch");
             response.writeHead(200, {'Content-Type':'application/json'});
-            response.writeHead(200, {'Access-Control-Allow-Origin':'*'});
+            response.writeHead(200, {'Access-Control-Allow-Origin':'http://localhost:3000/test-fetch'});
             response.write("test");
             response.end();
             break;
