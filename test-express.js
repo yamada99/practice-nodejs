@@ -29,7 +29,7 @@ router.use(cookieParser());
 router.use(csrf({cookie:true}));
 
 router.post("/user", async(req,res) => {
-    res.send("test");
+    res.send("test"); 
     res.send({staus:"OK"});
 });
 
